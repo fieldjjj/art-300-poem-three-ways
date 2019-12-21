@@ -1,0 +1,139 @@
+
+body{
+    background-color: white;
+    font-family: 'Noto Serif', serif;
+    padding: 0;
+    margin: 0;
+}
+
+.box{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 20px;
+    width: 100%;
+    height: 100%;
+    margin: auto;
+}
+
+.head{
+    background-color: black;
+    height: 1000px;
+}
+
+.title{
+    color: white;
+    text-align: right;
+}
+
+.author{
+    color: white;
+    text-align: right;
+}
+
+.poem{
+    display: grid;
+    grid-template-columns: 1fr;
+    margin-top: 120px;
+}
+
+.stanza_2{
+    color: white;
+    text-align: right;
+    margin-top: 230px;
+}
+
+/*-----------SMART PHONES ----------*/
+
+
+@media only screen and (max-width:800px){
+    .head{
+        background-color: white;
+        height: 1000px;
+    }
+    
+    .title{
+        color: black;
+        text-align: right;
+    }
+    
+    .author{
+        color: black;
+        text-align: right;
+        transform: rotate(90deg);
+    }
+    
+    .poem{
+        display: grid;
+        grid-template-columns: 1fr;
+        margin-top: 120px;
+    }
+    
+    .stanza_1{
+        text-align: center;
+    }
+
+    .stanza_2{
+        color: black;
+        text-align: right;
+        margin-top: 230px;
+        text-align: center;
+    }
+
+    .stanza_3{
+        text-align: center;
+    }
+    
+
+
+
+
+}
+
+/*----------TABLETS----------*/
+@media only screen and (min-width:800px) and (max-width:1280px){
+    body{
+        background-color:black;
+        font-family: 'Noto Serif', serif;
+        padding: 0;
+        margin: 0;
+    }
+
+    p{
+        color: white;
+    }
+
+    .title{
+        position: relative;
+        font-size: 3.5em;
+        color: white;
+        left: 0%;
+    }
+    
+    .author{
+        position: relative;
+        margin: auto;
+        font-size: 0.75em;
+        color: white;
+        left: 0%;
+        transform: rotate(90deg);
+    }
+
+
+    p{
+        font-size: 0.75em;
+    }
+    
+    .stanza_1{
+        position: relative;
+    }
+    
+    .stanza_2{
+        position: relative;
+    }
+    
+    .stanza_3{
+        position: relative;
+        margin-top: 0px;
+    }
+
+}
